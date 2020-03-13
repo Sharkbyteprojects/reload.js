@@ -1,14 +1,12 @@
 const fs=require("fs");
 const fjs=fs.readFileSync(__dirname+"/reloader.browser.js");
 module.exports=(app,path)=>{
-
+app.get("/reloader.js/reloader.js",(req,res)=>{
+	res.header("Content-Type", "application/javascript");
+	res.end(fjs);
+});
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
-http.addListener("request",(req,res)=>{
-	if(req.url=="/reloader.js/reloader.js"){
-	res.header("Content-Type", "application/javascript");
-	res.end(fjs);}
-});
 io.on('connection', function(socket){
 	socket.emit("welcome","true");
 });
