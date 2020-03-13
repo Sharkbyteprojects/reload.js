@@ -5,7 +5,7 @@
 - 2.Folder of Files (ONCHANGE, RELOAD)
 
 ## Return
-It return an NORMAL http-muódule http server
+It return an NORMAL http-module http server
 use it with '.listen(80, ()=>{console.log("HEY, ONLINE")})'
 
 ## Examples
