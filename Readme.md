@@ -1,4 +1,5 @@
 # RELOAD.JS
+![npm](https://img.shields.io/npm/dt/reloadsh.js?label=NPM%20DOWNLOADS)
 ## Argumentd
 - 1.APP from Express
 - 2.Folder of Files (ONCHANGE, RELOAD)
