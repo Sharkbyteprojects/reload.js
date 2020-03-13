@@ -8,8 +8,9 @@ const io = require('socket.io')(http);
 io.on('connection', function(socket){
 	socket.emit("welcome","true");
 });
-fs.watch(path,event=>{
+path.forEach(s=>{
+fs.watch(s,event=>{
 io.emit("reload", 1);
-});
+});});
 return http;
 };

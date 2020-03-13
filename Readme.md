@@ -1,15 +1,15 @@
 # RELOAD.JS
 ![npm](https://img.shields.io/npm/dt/reloadsh.js?label=NPM%20DOWNLOADS)
 ## Argumentd
-- 1.APP from Express
-- 2.Folder of Files (ONCHANGE, RELOAD)
+- 1.APP from Express [OBJECT]
+- 2.Folders of Files (ONCHANGE, RELOAD) [ARRAY]
 
 ## Return
 It return an NORMAL http-module http server
 use it with '.listen(80, ()=>{console.log("HEY, ONLINE")})'
 
 ## Examples
-```const reload = require('reloadsh.js')(app,__dirname+"/myfiles");```
+```const reload = require('reloadsh.js')(app,[__dirname+"/myfiles"]);```
 
 ### FULL EXAMPLE
 ```
@@ -21,7 +21,7 @@ app.get('/', function(req, res){
 
 });
 
-const reload = require('reloadsh.js')(app,__dirname);
+const reload = require('reloadsh.js')(app,[__dirname+"/files"]);
 
 reload.listen(8080,()=>{
 
