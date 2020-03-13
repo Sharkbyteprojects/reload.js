@@ -16,7 +16,9 @@
     "express",
     "app",
     "reload",
-    "socket"
+    "socket",
+    "live-reload",
+    "live"
   ],
   "author": "Sharkbyteprojects",
   "license": "ISC",
