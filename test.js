@@ -38,5 +38,5 @@ app.get("/changefile",(req,res)=>{
 	},2000);}iend=!iend;
 	res.redirect("/");
 });
-const io = require('./reloader.js')(app,__dirname);
+const io = require('./reloader.js')(app,[__dirname]);
 io.listen(8080,()=>{console.log("Server listen on 8080");})
