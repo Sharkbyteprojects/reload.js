@@ -11,14 +11,14 @@ use it with '.listen(80, ()=>{console.log("HEY, ONLINE")})'
 ```const reload = require('reloadsh.js')(app,__dirname+"/myfiles");```
 
 ### FULL EXAMPLE
-```const app = require('express')();```
+```const app = require('express')();
 
-```app.get('/', function(req, res){```
+app.get('/', function(req, res){
 
-```  res.sendFile(__dirname + '/files/index.html');```
+  res.sendFile(__dirname + '/files/index.html');
 
-```});```
+});
 
-```const reload = require('reloadsh.js')(app,__dirname);```
+const reload = require('reloadsh.js')(app,__dirname);
 
-```reload.listen(8080,()=>{console.log("Server listen on 8080");})```
+reload.listen(8080,()=>{console.log("Server listen on 8080");});```
