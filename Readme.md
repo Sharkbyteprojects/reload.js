@@ -21,4 +21,8 @@ app.get('/', function(req, res){
 
 const reload = require('reloadsh.js')(app,__dirname);
 
-reload.listen(8080,()=>{console.log("Server listen on 8080");});```
+reload.listen(8080,()=>{
+
+	console.log("Server listen on 8080");
+
+});```
