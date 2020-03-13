@@ -12,8 +12,13 @@ use it with '.listen(80, ()=>{console.log("HEY, ONLINE")})'
 
 ### FULL EXAMPLE
 ```const app = require('express')();```
+
 ```app.get('/', function(req, res){```
+
 ```  res.sendFile(__dirname + '/files/index.html');```
+
 ```});```
+
 ```const reload = require('reloadsh.js')(app,__dirname);```
+
 ```reload.listen(8080,()=>{console.log("Server listen on 8080");})```
