@@ -1,6 +1,7 @@
 const fs=require("fs");
 module.exports=(app,path)=>{
 app.get("/reloader.js/reloader.js",(req,res)=>{
+	res.header("Content-Type", "application/javascript");
 	res.sendFile(__dirname+"/reloader.browser.js");
 });
 const http = require('http').createServer(app);
