@@ -1,0 +1,25 @@
+{
+  "name": "reload.js",
+  "version": "1.0.0",
+  "description": "RELOAD FOR EXPRESS",
+  "main": "reloader.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sharkbyteprojects/reload.js.git"
+  },
+  "keywords": [
+    "express",
+    "app",
+    "reload",
+    "socket"
+  ],
+  "author": "Sharkbyteprojects",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sharkbyteprojects/reload.js/issues"
+  },
+  "homepage": "https://github.com/Sharkbyteprojects/reload.js#readme"
+}
