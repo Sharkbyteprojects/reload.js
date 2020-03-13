@@ -29,3 +29,5 @@ reload.listen(8080,()=>{
 
 });
 ```
+
+AT INDEX.html you must add in the HEAD ```<script type="text/javascript" src="/reloader.js/reloader.js"></script>```
