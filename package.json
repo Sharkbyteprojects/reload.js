@@ -1,5 +1,5 @@
 {
-  "name": "reload.js",
+  "name": "reloadsh.js",
   "version": "1.0.0",
   "description": "RELOAD FOR EXPRESS",
   "main": "reloader.js",
